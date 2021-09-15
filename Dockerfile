@@ -1,7 +1,6 @@
 FROM alpine:latest
 
-ADD HelloWorld.java HelloWorld.java
-RUN javac HelloWorld.java
+ADD HelloWorld.class HelloWorld.class
 
 RUN apk --update add openjdk8-jre
 
